@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>CUENTOS DEL CHASKI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href='https://fonts.googleapis.com/css?family=Fredericka the Great' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet'>
+    <link rel="icon" type="image/ico" href="favicon.ico">
+    <style>
+        h1 {
+            font-family: 'Fredericka the Great';
+            font-size: 64px;
+            color: #ddcfb5;
+        }
+
+
+        p,
+        h2,
+        h3 {
+            font-family: 'Cookie';
+            font-size: 48px;
+            text-align: center;
+            color: #ddcfb5;
+
+        }
+
+        h6 {
+            color: #ddcfb5;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+
+        body {
+            background-image: url("bgGREGASmorado.jpg");
+        }
+
+
+
+        .button {
+            background-image: url(01tazab.png);
+            background-color: transparent;
+            /* Green */
+            border: none;
+            color: transparent;
+            height: 100px;
+            width: 100px;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px 2px;
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s;
+            /* Safari */
+            transition-duration: 0.4s;
+        }
+
+        .button1:hover {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        }
+    </style>
+</head>
+<!--bgGREGASmorado.jpg-->
+
+<body>
+    <div class="w3-container w3-purple w3-hover-deep-purple ">
+        <h1 title="creado por Mau;" style="text-align:center;">CUENTOS DEL CHASKI </h1>
+    </div>
+
+    <div class="w3-bar" style="background-color:rgb(117, 30, 98)">
+        <button class="w3-bar-item w3-button" onclick="pestaña('Cuento0')">La taza y el florero</button>
+        <button class="w3-bar-item w3-button" onclick="pestaña('Cuento1')">Cuento 2 </button>
+
+    </div>
+    <div id="Cuento0" class="w3-container boton w3-panel ;">
+        <h1 style="text-align:center;">La taza y el florero</h1>
+        <h6 style="text-align:center;">Cuento escrito por Marcela Gutiérrez y adaptado por la revista infantil Chaski
+        </h6>
+        <!-- -->
+        <!--<img src="java1.png" alt="logo de java" width="100" height="100">-->
+
+        <p>Había una vez una taza blanca <button onclick="location.href='https://www.facebook.com'" class="button button1">t</button>y redonda que vivía en una casa
+            humilde. Era muy vieja, había pasado muchos
+            años entre la mesa y la vitrina. Un día llegó al comedor un florero farsante. Dijo que había viajado por
+            todo el mundo en avión, en tren y en barco.
+        </p>
+        <p>Era amigo de las rosas y los lirios, y en especial de los claveles y las azucenas.</p>
+        <p>Los platos, los vasos y las tazas se pusieron muy celosos. Querían también viajar en avión, en tren y en
+            barco. Querían rosas y azucenas y no papas ni lechugas, ni agua sin flores. Sólo la taza vieja parecía
+            tranquila y no abría la boca. ¿Saben por qué? Ya hacía tiempo que había perdido su oreja y no podía escuchar
+            las farsas del florero ni saber de los celos de sus compañeros de vitrina. </p>
+    </div>
+    <div id="Cuento1" class="w3-container boton">
+        <h3>Nuevo cuento</h3>
+        <p>
+            <!--aqui ira otro cuento-->
+    </div>
+    <div style="font-size: 22px" class="w3-container w3-purple">
+        <pr>Autor: Mauricio Arancibia</pr>
+    </div>
+    <script>
+        function pestaña(nuevoBoton) {
+            var i;
+            var x = document.getElementsByClassName("boton");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(nuevoBoton).style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
